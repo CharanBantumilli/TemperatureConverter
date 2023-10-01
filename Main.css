@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(243, 6, 6);
+}
+.wrapper{
+    background: rgb(241, 202, 6);
+    padding: 70px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+.wrapper .input_box h6{
+    margin-bottom: 8px;
+    font-size: large;
+    font-weight: 300;
+}
+.wrapper .icon{
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: 300;
+    color: rgb(255, 64, 0);
+}
+.wrapper .input_box input{
+    color: rgb(107, 107, 248);
+    max-width: 130px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+    font-size: larger;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.input_box input::-webkit-inner-spin-button,
+.input_box input::-webkit-outer-spin-button{
+    display: none;
+}
+body .heading{
+    position: absolute; top: 80px;
+    font-size: xx-large;
+    text-align: center;
+}
+    /* arc reacter */
+body .creater{
+    position: absolute; bottom: 80px;
+}
+body .creater a{
+    text-decoration: none;
+    color: black;
+    
+}
+/* ANIMATION SECTION */
+body .creater .circle:hover{
+    animation-name: user_style;
+    animation-duration: 4s;
+
+}
+@keyframes user_style{
+    from{background-color: #a6fbfb;}
+    to{box-shadow: 0px 0px 10px 5px #52fefe , 0px 0px 70px 20px #52fefe inset;}
+}
+body .creater .circle{
+    height: 120px;
+    width: 120px;
+    background-color: #a6fbfb;
+    border-radius: 100px;
+}
